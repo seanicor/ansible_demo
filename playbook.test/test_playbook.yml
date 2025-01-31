@@ -1,6 +1,1 @@
-333
-sadfasfasdf
-First time in Ansible
-CCIE
-CCNP
-CCNA
+ansible all -i 192.168.0.221,192.168.0.222, -c ansible.netcommon.network_cli -u admin -k -m cisco.ios.ios_command -e ansible_network_os=cisco.ios.ios -a "commands='show version | i uptime'"
